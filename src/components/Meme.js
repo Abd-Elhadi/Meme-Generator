@@ -39,32 +39,34 @@ export default function Meme() {
     }
 
     return (
-        <main>
-            <form onSubmit={getMemeImage} className="form">
-                <input
-                    name='topText'
-                    className="form-input"
-                    placeholder="Top text"
-                    type="text" 
-                    onChange={handleChange}
-                    value={formData.topText}
-                />
-                <input
-                    name='bottomText'
-                    className="form-input"
-                    placeholder="Bottom text"
-                    type="text" 
-                    onChange={handleChange}
-                    value={formData.bottomText}
-                />
-                <button onClick={getMemeImage} className="form-button">Get a new meme image 📸</button>
-            </form>
-            <div className='meme'>
-                <img className='meme-image' src={meme.randomImage} alt='random meme' />
-                <div></div>
-                {formData.topText && <h2 className='meme-text top'>{formData.topText}</h2>}
-                {formData.bottomText && <h2 className='meme-text bottom'>{formData.bottomText}</h2>}
-            </div>
-        </main>
+        <div>
+            <main>
+                <form onSubmit={getMemeImage} className="form">
+                    <input
+                        name='topText'
+                        className="form-input"
+                        placeholder="Top text"
+                        type="text" 
+                        onChange={handleChange}
+                        value={formData.topText}
+                    />
+                    <input
+                        name='bottomText'
+                        className="form-input"
+                        placeholder="Bottom text"
+                        type="text" 
+                        onChange={handleChange}
+                        value={formData.bottomText}
+                    />
+                    <button onClick={getMemeImage} className="form-button">Get a new meme image 📸</button>
+                </form>
+                <div className='meme'>
+                    <img className='meme-image' src={meme.randomImage} alt='random meme' />
+                    <div></div>
+                    {formData.topText && <h2 className='meme-text top'>{formData.topText}</h2>}
+                    {formData.bottomText && <h2 className='meme-text bottom'>{formData.bottomText}</h2>}
+                </div>
+            </main>
+        </div>
     )
 }
