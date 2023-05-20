@@ -2,8 +2,10 @@
 
 function Footer() {
     return (
-        <div className="footer">
+        <footer className="footer">
             <p>Copyright © 2023 - <a href="https://github.com/Abd-Elhadi">Abdelhadi</a></p>
-        </div>
+        </footer>
     )
 }
+
+export default Footer;

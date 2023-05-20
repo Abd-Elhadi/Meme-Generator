@@ -1,3 +1,10 @@
+:root {
+    --clr-accent-dark: #672280;
+    --clr-accent-light: #a626d3;
+  
+    --ff-main: "Karla", sans-serif;
+  }
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -168,4 +175,28 @@ main {
 
 .top {
     top: 0;
+}
+
+
+.footer {
+    padding: 1.25em 2.25em;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+      90deg,
+      var(--clr-accent-dark) 1.18%,
+      var(--clr-accent-light) 100%
+    );
+    color: var(--clr-primary);
+    font-size: 18px;
+}
+  
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+.footer a:hover {
+    text-decoration: underline;
+    color: inherit;
 }
